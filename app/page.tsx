@@ -42,6 +42,7 @@ const Page = () => {
         <div className="font-extrabold text-2xl font-serif">ResumeGrove</div>
         <div className='flex justify-center items-center gap-10 max-md:hidden'>
         {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           Navs.map((el:any)=>(
             <div className=' font-semibold text-base cursor-pointer hover:underline decoration-4 underline-offset-8 font-serif lg:flex md:hidden max-sm:hidden'
              key={el.id}>
@@ -60,8 +61,9 @@ const Page = () => {
 
       </header>
     </header>
-   {Toggle && <div className=" gap-4 w-full h-[100vh] bg-black absolute top-0 z-10 mt-[80px] transition ease-in-out duration-300 transform translate-x-[0%] flex justify-start items-start flex-col px-6 cursor-pointer md:hidden lg:hidden animate-none">
+   {Toggle && <div className=" gap-4 w-full h-[100vh] bg-black absolute top-0 z-10 mt-[80px] transition-all ease-in-out duration-300 transform translate-x-[0%] flex justify-start items-start flex-col px-6 cursor-pointer md:hidden lg:hidden animate-none">
     {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       Navs.map((t:any)=>(
         <div className='text-white font-semibold mt-8 font-serif' key={t.id}>
           {t.name}

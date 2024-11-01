@@ -34,6 +34,7 @@ const Sec1 = () => {
      </div>
    <div className='gap-4 w-[90%] flex justify-center items-center max-sm:flex-col p-2'>
    {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
       Started.map((s:any)=>(
    <div className='w-full flex justify-start items-start gap-10 'key={s.id}>
          <div className='w-full flex justify-between items-start flex-col gap-2'>
