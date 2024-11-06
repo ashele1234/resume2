@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { MdCancel, MdMenu } from 'react-icons/md'
 import Sec1 from './Sec1'
+import Sec2 from './Sec2'
 
 
 const Navs=[
@@ -10,19 +11,19 @@ const Navs=[
      name:"Home"
   },
   {
-    id:1,
+    id:2,
      name:"About"
   },
   {
-    id:1,
+    id:3,
      name:"Services"
   },
   {
-    id:1,
+    id:4,
      name:"News"
   },
   {
-    id:1,
+    id:5,
      name:"FAQ"
   }
 ]
@@ -70,14 +71,14 @@ const Page = () => {
         </div>
       ))
     }
-    <div className='flex gap-4'>
+    <div className='flex gap-2'>
           <button className='px-12 py-4 bg-slate-900 rounded-md border font-semibold hover:bg-[#502ACD] text-[#fff] font-serif'>Sign in</button>
           <button className='px-12 py-4 rounded-md font-semibold bg-[#502ACD] text-white hover:bg-slate-600 font-serif'>Register</button>
         </div>
     </div>}
-    <section className=' sec-1 w-full h-[100vh] bg-slate-800 flex justify-center items-center flex-col gap-2'>
-    <div className=' transition-all duration-300 absolute w-full h-[100vh] top-0 flex flex-col bg-[rgba(0,0,0,0.57)] justify-center items-center max-sm:gap-4'>
-    <h1 className='font-bold text-7xl text-white font-serif text-center max-sm:text-3xl mt-6'>Craft a resume that gets <br /> you hired.</h1>
+    <section className=' sec-1 mt-[25px] w-full h-screen flex justify-center items-center flex-col gap-2'>
+    <div className='  absolute w-full h-[100vh] top-0 flex flex-col bg-[rgba(0,0,0,0.37)] justify-center items-center max-sm:gap-4'>
+    <h1 className='font-bold text-7xl text-white font-serif text-center max-sm:text-3xl mt-6 '>Craft a resume that gets <br /> you hired.</h1>
     <p className='font-bold text-2xl text-white font-serif text-center max-sm:text-sm max-w-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cumque assumenda,labore cum molestias sint!</p>
     <div className='flex justify-center items-center gap-2 mt-6'>
       <button className='px-10 py-3 bg-white font-serif rounded-md drop-shadow-2xl max-sm:px-6'>CREATE CV</button>
@@ -86,6 +87,7 @@ const Page = () => {
     </div>
     </section>
     <div><Sec1/></div>
+    <div className='w-full flex justify-center items-center'><Sec2/></div>
    </div>
   )
 }

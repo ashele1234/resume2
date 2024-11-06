@@ -6,7 +6,7 @@ import icon2 from "../app/images/icon-2.png"
 import icon3 from "../app/images/icon-3.png"
 const Started=[
     {
-     id:0,
+     id:1,
      img:icon1,
      h1:`Enter Details`,
      p:`Semper nec eleifend arcu natoque hac est lectus gravida urna, nostra. Accumsan vel pede nam volutpat magnis.`
@@ -26,13 +26,13 @@ const Started=[
    ]
 const Sec1 = () => {
   return (
-    <div className='max-sm:mt-44'>
+    <div className='max-sm:mt-48 mb-20 md:mb-0'>
         <section className='w-full h-[80vh] flex justify-center items-center bg-white flex-col gap-16 -mt-10'>
      <div className='flex justify-center items-center flex-col gap-4'>
      <h1 className='font-bold text-4xl'>How It Works?</h1>
      <p className='font-medium text-2xl max-w-[740px] text-center'>Ultricies nulla velit turpis feugiat ac aenean sociosqu luctus facilisis lobortis. Mi commodo dictum fames libero interdum.</p>
      </div>
-   <div className='gap-4 w-[90%] flex justify-center items-center max-sm:flex-col p-2'>
+   <div className='gap-4 w-[90%] flex justify-center items-center max-sm:flex-col p-0'>
    {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
       Started.map((s:any)=>(
@@ -41,9 +41,9 @@ const Sec1 = () => {
          <Image
           src={s.img}
           alt='icons'
-          width={50}
-          height={50}
-          className='text-[#502ACD]'
+          width={0}
+          height={0}
+          className='w-[40px] h-[40px] text-[#502ACD] drop-shadow-lg'
           />
           <h2 className='font-bold text-2xl'>{s.h1}</h2>
           <p className='font-normal text-[20px]'>{s.p}</p>
