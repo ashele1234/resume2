@@ -41,6 +41,7 @@ const Sec2 = () => {
         <h1 className='font-bold text-4xl max-sm:text-4xl text-center'>Try Our Creative Tools</h1>
         <p className='font-normal text-2xl text-center max-sm:text-1xl'>Ultricies nulla velit turpis feugiat ac aenean sociosqu luctus facilisis lobortis. Mi commodo dictum fames libero interdum.</p>
         {
+           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           About.map((a:any)=>(
              <div className='w-full h-[18vh] bg-white rounded-md p-4 max-sm:bg-slate-100 '>
     
