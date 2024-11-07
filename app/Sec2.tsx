@@ -43,9 +43,8 @@ const Sec2 = () => {
         {
            // eslint-disable-next-line @typescript-eslint/no-explicit-any
           About.map((a:any)=>(
-             <div className='w-full h-[18vh] bg-white rounded-md p-4 max-sm:bg-slate-100 '>
-    
-                <div className='flex justify-start items-center gap-2' key={a.id}>
+             <div className='w-full h-[18vh] bg-white rounded-md p-4 max-sm:bg-slate-100 ' key={a.id}>
+                <div className='flex justify-start items-center gap-2'>
                 <Image
               width={0}
               height={0}
