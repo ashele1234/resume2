@@ -26,7 +26,7 @@ const About=[
  ]
 const Sec2 = () => {
   return (
-    <div className=' mb-[850px] w-full h-[100vh] bg-[#d7d4dd] flex justify-center items-center max-sm:w-full max-sm:bg-[rgba(215,212,221,0)]'>
+    <div className='max-sm:mb-[850px] w-full h-[100vh] bg-[#d7d4dd] flex justify-center items-center max-sm:w-full max-sm:bg-[rgba(215,212,221,0)]'>
       <div className='w-[90%] h-[90vh] flex justify-between items-center max-sm:flex-col gap-2 mt-20 max-sm:bg-transparent'>
       <div className='w-[40%] border-slate-950 border rounded-md max-sm:w-full'>
         <Image

@@ -35,6 +35,7 @@ const Sec3 = () => {
       <p className='font-normal text-2xl text-wrap max-sm:text-center'>Ultricies nulla velit turpis feugiat ac aenean sociosqu luctus facilisis lobortis. Mi commodo dictum fames libero interdum.</p>
      <div className='w-full flex justify-between items-center max-sm:flex-col gap-4'>
      {
+         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         Designers.map((el:any)=>(
             <div className='w-[330px] h-[40vh] border rounded-lg flex justify-center items-start flex-col p-4 gap-6' key={el.id}>
             <div className='flex justify-center items-start gap-2'>
