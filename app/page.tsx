@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { MdCancel, MdMenu } from 'react-icons/md'
 import Sec1 from './Sec1'
 import Sec2 from './Sec2'
+import Sec3 from './Sec3'
 
 
 const Navs=[
@@ -88,6 +89,7 @@ const Page = () => {
     </section>
     <div><Sec1/></div>
     <div className='w-full flex justify-center items-center'><Sec2/></div>
+    <div className='w-full flex justify-center items-center'><Sec3/></div>
    </div>
   )
 }
